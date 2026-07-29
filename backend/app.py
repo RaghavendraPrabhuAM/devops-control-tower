@@ -9,10 +9,9 @@ app.config["SECRET_KEY"] = Config.SECRET_KEY
 
 app.register_blueprint(api)
 
-
 if __name__ == "__main__":
-    app.run(
-        host=Config.HOST,
-        port=Config.PORT,
-        debug=True
-    )
+  app.run(
+    host=Config.HOST,
+    port=Config.PORT,
+    debug=True
+)

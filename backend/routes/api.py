@@ -7,7 +7,7 @@ api = Blueprint("api", __name__)
 @api.route("/")
 def home():
     return {
-        "message": "Welcome to DevOps Control Tower API",
+        "message": "Hello Raghu! Bind Mount is Working",
         "status": "Running"
     }
 
@@ -27,4 +27,9 @@ def info():
         "version": "1.0.0",
         "environment": "Development",
         "author": "Raghu"
+    }
+@api.route("/hello")
+def hello():
+    return {
+        "message": "Hello from Flask Backend!"
     }
